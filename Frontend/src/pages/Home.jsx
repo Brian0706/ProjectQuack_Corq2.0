@@ -4,6 +4,7 @@ import Nav from '../components/Navbar/Navbar'
 const Home = () => {
   return (
     <div>
+      <img></img>
     </div>
   )
 }
