@@ -1,22 +1,18 @@
 import { useState } from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Home from './pages/Home'
-import Calendar from '../assets/Calendar.svg'
-import { BrowserRouter, Routes, Link } from 'react-router-dom'
+import Home from './pages/home'
+import Navbar from './components/Navbar/Navbar.jsx'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <p>aifhnaowe</p>
+    <Router>
+      <div>
 
-      <Home />
-      <img src={Calendar} />
-
-      <BrowserRouter>
+        <Routes>
           <Route path='/' element={<Home />} />
-      </BrowserRouter>
-    </div>
+        </Routes>
+      </div>
+    </Router>
   )
 }
 

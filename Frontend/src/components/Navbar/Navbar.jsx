@@ -7,18 +7,14 @@ import Menu from '../../../assets/Menu.svg'
 import { Router, Routes, Link } from 'react-router-dom'
 
 
-const Navbar = () => {
-  const handleClick = () => {
-
-  }
-  
+const Navbar = () => {  
   return (
     <div>
       <nav class="navbar">
         <button class="nav-button">
           <img src={Menu}/>
         </button>
-        <button class="nav-button" onClick={handleClick}>
+        <button class="nav-button">
           <img src={SBEngaged} />
         </button>
       </nav>
