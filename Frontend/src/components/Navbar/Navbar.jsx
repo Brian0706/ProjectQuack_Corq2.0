@@ -8,15 +8,19 @@ import { Router, Routes, Link } from 'react-router-dom'
 
 
 const Navbar = () => {  
+
+  const handleClikc = () => {
+
+  }
   return (
     <div>
       <nav class="navbar">
         <button class="nav-button">
           <img src={Menu}/>
         </button>
-        <button class="nav-button">
+        <a href="http://localhost:5173/">
           <img src={SBEngaged} />
-        </button>
+        </a>
       </nav>
     </div>
   )
