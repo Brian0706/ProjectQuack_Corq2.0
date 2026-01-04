@@ -1,16 +1,33 @@
-.navbar {
+.topbarcontainer {
+  position: relative;
+  margin: 0;
+}
+.topright {
   position: fixed;
-  top: 0;
-  background: #D9D9D9;
-  width: 100%; 
-  border-bottom-color: #6B000D;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
+  top: .5%;
+  right: 8px;
+   z-index: 3;
 
-.nav-button {
-  background-color: #D9D9D9;
-  border-color: #D9D9D9;
-}
-.nav-button:hover {
-  cursor: pointer; /* Changes cursor to a hand icon */
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+ 
+.topleft {
+  position: fixed;
+  top: 0%;
+  left: 1%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
