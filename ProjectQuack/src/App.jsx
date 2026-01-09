@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import {ResquestTester} from './testingStuff/requestTester'
+import RequestTester from './testingStuff/requestTester'
 import './App.css'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div>
-        <
+        <RequestTester/>
       </div>
     </>
   )
