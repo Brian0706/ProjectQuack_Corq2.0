@@ -1,19 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import RequestTester from './testingStuff/requestTester'
 import './App.css'
+import Navbar from "./components/navbar";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <RequestTester/>
-      </div>
-    </>
-  )
+    <div className="App"> 
+      <Navbar/>
+      MAIN PAGE CONTENT
+      
+      
+    </div>
+  );
 }
 
 export default App
