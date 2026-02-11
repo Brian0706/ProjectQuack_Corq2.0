@@ -17,7 +17,7 @@ function Navbar() {
         <img src="/src/assets/Logo.png" className='navbar-logo'/>
 
         <div className='navbar-searchbar'>
-            <img src="" alt=""/>
+            {/* <img src="" alt=""/> */}
             <input 
                 ref={searchInputRef}
                 type="text" 
