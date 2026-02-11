@@ -1,0 +1,81 @@
+*{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    position:fixed;
+}
+
+.navbar-logo {
+    width: 194px;
+    height: 48px;
+    content: fit-content;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.navbar-searchbar {
+    display: flex;
+    align-items: center;
+    width: 520px;
+    padding: 10px 14px;
+    position: relative;
+    background: #ffffff;
+    flex: 0 0 auto;
+}
+
+.navbar-searchbar input {
+    flex: 1;
+    height: 32px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 24px;
+    outline: none;
+}
+
+.navbar-searchbar input:focus {
+    border-color: black;
+    background: lightgray;
+}
+
+.navbar-searchbar input:hover {
+    border-color: black;
+    cursor: pointer;
+}
+
+.navbar-searchbar input:placeholder-shown + .navbar-searchbar_Fclear {
+    display: none;
+}
+
+.navbar-searchbar_Fclear {
+    position: absolute;
+    right: 31px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-notifications {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navbar-profile {
+    margin-left: 20px;
+    cursor: pointer;
+}
