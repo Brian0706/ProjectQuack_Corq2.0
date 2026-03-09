@@ -1,5 +1,8 @@
 import './Navbar.css'
 import { useRef, useState } from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import BreadCrumbs from './BreadCrumbs';
 
 function Navbar() {
     const [searchText, setSearchText] = useState('')
@@ -16,25 +19,15 @@ function Navbar() {
         
         <img src="/src/assets/Logo.png" className='navbar-logo'/>
 
-        <div className='navbar-searchbar'>
-            {/* <img src="" alt=""/> */}
-            <input 
-                ref={searchInputRef}
-                type="text" 
-                placeholder='Search for clubs, events, and more...' 
-                value={searchText} 
-                onChange={(e) => 
-                setSearchText(e.target.value)}
+        <Box 
+        sx={{ width: 500, maxWidth: '100%' }}
+        >
+            <TextField fullWidth label="Search for clubs, events, and more..." id="searchbar" 
+            type="search" 
+            color='red'
+            className='searchbar'
             />
-            
-            <button 
-                className='navbar-searchbar_Fclear' 
-                type="button" 
-                onClick={handleClearClick}>
-                X
-            </button>
-            
-        </div>
+        </Box>
 
         <div className='navbar-right'>
             <div className='navbar-notifications'>
@@ -46,6 +39,9 @@ function Navbar() {
                 <p>PROFILE</p>
             </div>  
         </div>
+
+        
+    
     </div>
     )
 }

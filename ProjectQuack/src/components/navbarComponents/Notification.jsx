@@ -6,4 +6,4 @@ function Notification() {
             <p>Notifications</p>
         </div>
     )
-}
+} 
