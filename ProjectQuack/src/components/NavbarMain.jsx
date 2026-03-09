@@ -9,8 +9,8 @@ function NavbarMain() {
         <div>
             <div className="navbar-main-container">
                 <Navbar/>
-                <PageProgressBar/>
                 <BreadCrumbs/>
+                <PageProgressBar/>
             </div>
         </div>
     )

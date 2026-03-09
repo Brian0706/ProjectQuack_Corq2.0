@@ -2,7 +2,16 @@ import './Navbar.css'
 import { useRef, useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import BreadCrumbs from './BreadCrumbs';
+
+function btnAssigner(input) {
+    var btn = document.getElementById(input);
+    btn.addEventListener("click", breadcrumbUpdater(input));
+}
+
+function breadcrumbUpdater(input) {
+
+}
+
 
 function Navbar() {
     const [searchText, setSearchText] = useState('')
@@ -16,9 +25,9 @@ function Navbar() {
     return (
         
     <div className='navbar'>
-        
+        <button id = 'button_navbar-logo' className = 'button_navbar-logo'>
         <img src="/src/assets/Logo.png" className='navbar-logo'/>
-
+        </button>
         <Box 
         sx={{ width: 500, maxWidth: '100%' }}
         >

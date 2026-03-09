@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    padding-bottom: 5px;
     background-color: white;
 }
 
@@ -67,6 +68,7 @@
 .navbar-right {
     display: flex;
     align-items: center;
+    padding-right: 1rem;
 }
 
 .navbar-notifications {
@@ -77,4 +79,10 @@
 .navbar-profile {
     margin-left: 20px;
     cursor: pointer;
+}
+
+.button_navbar-logo {
+    padding: 0rem;
+    border: none;
+    background: none;
 }
