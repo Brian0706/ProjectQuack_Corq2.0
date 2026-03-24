@@ -12,6 +12,12 @@ function breadcrumbUpdater(input) {
 
 }
 
+function modal(type) {
+    if(type == 'navbar_notif') {
+        
+    }
+}
+
 
 function Navbar() {
     const [searchText, setSearchText] = useState('')
@@ -25,32 +31,40 @@ function Navbar() {
     return (
         
     <div className='navbar'>
+        
+        {/* Navbar Logo should direct back to homepage. Will test once more than one page exist. */}
         <button id = 'button_navbar-logo' className = 'button_navbar-logo'>
-        <img src="/src/assets/Logo.png" className='navbar-logo'/>
+            <img src="/src/assets/Logo.png" className='navbar-logo'/>
         </button>
+
+        {/* Usage of MaterialUI's Search Box with custom CSS Elements */}
         <Box 
-        sx={{ width: 500, maxWidth: '100%' }}
-        >
-            <TextField fullWidth label="Search for clubs, events, and more..." id="searchbar" 
-            type="search" 
-            color='red'
-            className='searchbar'
+            sx={{ 
+                width: 500, 
+                maxWidth: '100%' 
+                }}>
+            <TextField
+                fullWidth label="Search for clubs, events, and more..." 
+                id="searchbar" 
+                type="search" 
+                color='red'
+                className='searchbar'
             />
         </Box>
 
         <div className='navbar-right'>
-            <div className='navbar-notifications'>
-                <p>NOTIFICATIONS</p>
-            </div>
-            
+            <button className='navbar-notifications' onClick="modal('navbar_notif')">
+                <div className='navbar-notifications'>
+                    <p>NOTIFICATIONS</p>
+                </div>
+            </button>
 
-            <div className='navbar-profile'>
-                <p>PROFILE</p>
-            </div>  
+            <button className='navbar-profile'>
+                <div className='navbar-profile'>
+                    <p>PROFILE</p>
+                </div>
+            </button>  
         </div>
-
-        
-    
     </div>
     )
 }

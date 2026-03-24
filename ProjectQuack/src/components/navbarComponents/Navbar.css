@@ -72,13 +72,17 @@
 }
 
 .navbar-notifications {
-    margin-left: 20px;
+    margin-left: 10px;
     cursor: pointer;
+    border: none;
+    background: none;
 }
 
 .navbar-profile {
-    margin-left: 20px;
+    margin-left: 10px;
     cursor: pointer;
+    border: none;
+    background: none;
 }
 
 .button_navbar-logo {
