@@ -2,21 +2,7 @@ import './Navbar.css'
 import { useRef, useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-
-function btnAssigner(input) {
-    var btn = document.getElementById(input);
-    btn.addEventListener("click", breadcrumbUpdater(input));
-}
-
-function breadcrumbUpdater(input) {
-
-}
-
-function modal(type) {
-    if(type == 'navbar_notif') {
-        
-    }
-}
+// import Dropdown from '../Dropdowns/base/base';
 
 
 function Navbar() {
@@ -29,12 +15,12 @@ function Navbar() {
     }
 
     return (
-        
+    
     <div className='navbar'>
-        
+
         {/* Navbar Logo should direct back to homepage. Will test once more than one page exist. */}
-        <button id = 'button_navbar-logo' className = 'button_navbar-logo'>
-            <img src="/src/assets/Logo.png" className='navbar-logo'/>
+        <button id = 'button_navbar-logo' className = 'button_navbar-logo' href=''>
+            <img src="/src/assets/Logo.png" className='navbar-logo' href=''/>
         </button>
 
         {/* Usage of MaterialUI's Search Box with custom CSS Elements */}
@@ -53,17 +39,24 @@ function Navbar() {
         </Box>
 
         <div className='navbar-right'>
-            <button className='navbar-notifications' onClick="modal('navbar_notif')">
-                <div className='navbar-notifications'>
-                    <p>NOTIFICATIONS</p>
+            <div className='navbar-notifications'>
+                <button className='notifications-button'>NOTIFICATIONS</button>
+                <div className='notifications-content'>
+                    <a href=''>Option 1</a>
+                    <a href=''>Option 2</a>
+                    <a href=''>Option 3</a>
                 </div>
-            </button>
+            </div>
+            
+            <div className='navbar-profile'>
+                <button className='profile-button'>PROFILE</button> 
+                <div className='profile-content'>
+                    <a href=''>Option 1</a>
+                    <a href=''>Option 2</a>
+                    <a href=''>Option 3</a>
+                </div>
+            </div>
 
-            <button className='navbar-profile'>
-                <div className='navbar-profile'>
-                    <p>PROFILE</p>
-                </div>
-            </button>  
         </div>
     </div>
     )
