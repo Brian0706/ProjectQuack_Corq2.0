@@ -1,28 +1,30 @@
 import './Navbar.css'
 import { useRef, useState } from 'react';
 import Box from '@mui/material/Box';
+import PageProgressBar from './PageProgressBar';
 import TextField from '@mui/material/TextField';
-// import Dropdown from '../Dropdowns/base/base';
+import Dropdown from '../Dropdowns/base/base';
+import { FaInbox } from "react-icons/fa";
 
 
 function Navbar() {
-    const [searchText, setSearchText] = useState('')
-    const searchInputRef = useRef(null)
+    // const [searchText, setSearchText] = useState('')
+    // const searchInputRef = useRef(null)
 
-    const handleClearClick = () => {
-        setSearchText('')
-        searchInputRef.current?.focus()
-    }
-
+    // const handleClearClick = () => {
+    //     setSearchText('')
+    //     searchInputRef.current?.focus()
+    // }
     return (
     
     <div className='navbar'>
+    
 
         {/* Navbar Logo should direct back to homepage. Will test once more than one page exist. */}
         <button id = 'button_navbar-logo' className = 'button_navbar-logo' href=''>
             <img src="/src/assets/Logo.png" className='navbar-logo' href=''/>
         </button>
-
+        <Dropdown buttonContent={"buttonContent"} buttonText={"buttonTest"}/>
         {/* Usage of MaterialUI's Search Box with custom CSS Elements */}
         <Box 
             sx={{ 

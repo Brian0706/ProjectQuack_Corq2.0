@@ -15,6 +15,9 @@ function PageProgressBar() {
         const scrolled = window.scrollY;
         const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
         progressBarRef.current.style.width = percentScrolled + '%';
+        if(percentScrolled >= 20) {
+
+        }
 
     }
     return (
