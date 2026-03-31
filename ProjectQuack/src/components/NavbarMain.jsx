@@ -1,5 +1,7 @@
+import BreadCrumbs from "./navbarComponents/BreadCrumbs";
 import Navbar from "./navbarComponents/Navbar";
 import PageProgressBar from "./navbarComponents/PageProgressBar";
+
 import './NavbarMain.css'
 
 function NavbarMain() {
@@ -7,6 +9,7 @@ function NavbarMain() {
         <div>
             <div className="navbar-main-container">
                 <Navbar/>
+                <BreadCrumbs/>
                 <PageProgressBar/>
             </div>
         </div>

@@ -4,16 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.8",
     "command": "^1.1.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-error-boundary": "^6.1.0"
+    "react-error-boundary": "^6.1.1",
+    "react-icons": "^5.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

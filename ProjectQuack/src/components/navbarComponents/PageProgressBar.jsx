@@ -1,5 +1,6 @@
 import './PageProgressBar.css'
 import { useRef, useState } from 'react';
+import BreadCrumbs from './BreadCrumbs';
 
 function PageProgressBar() {
     const progressBarRef = useRef(null);
@@ -14,12 +15,16 @@ function PageProgressBar() {
         const scrolled = window.scrollY;
         const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
         progressBarRef.current.style.width = percentScrolled + '%';
+        if(percentScrolled >= 20) {
+
+        }
 
     }
     return (
         <div className="progress-container">
             <div className="progress-bar" id="progressBar" ref={progressBarRef}></div>
         </div>
+        
     )
 }
 
