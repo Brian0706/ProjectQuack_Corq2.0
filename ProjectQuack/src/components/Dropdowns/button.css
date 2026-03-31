@@ -4,7 +4,7 @@
     width: fit-content;
     padding: 1rem;
     background-color: white;
-    box-shadow: gray 0px 2px 0px;
+    /* box-shadow: gray 0px 2px 0px; */
     cursor: pointer;
 }
 
@@ -13,4 +13,8 @@
     align-items: center;
     justify-content: center;
     margin-left: 0.5rem;
+}
+
+.button-open {
+    
 }
